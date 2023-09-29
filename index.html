@@ -1,75 +1,232 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Overpass&display=swap');
+
 		body{
-  			background-image: url("https://images.unsplash.com/photo-1533327325824-76bc4e62d560?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80");
-  			background-size: cover;
-  			font-family: 'Saira', sans-serif;
+			margin: 0px;
+			background-color:black;
 		}
 
-		#window{
-			display: inline-block;
-			width:300px;
-			height:300px;
-			background-image:url(https://www.greeleywindowcompany.com/uploads/8/1/5/7/81571446/wood-window-replacement-greeley-co_orig.jpg);
-			background-size:contain;
-			background-repeat:no-repeat;
+		html {
 
 		}
+		.homepage {
+		    min-height: 720px;
+		    position: relative;
+		    height: 100%;
+		    background: url(https://images.unsplash.com/photo-1533327325824-76bc4e62d560?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80) center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    background-size: cover;
+		    color: #fff;
+		    filter: blur(8px);
+		    -webkit-filter: blur(8px);
+		  	
+  		}
 
-		#window2{
-			display: inline-block;
+		.image2{
+		    min-height: 720px;
+		    position: relative;
+		    height: 100%;
+		    background: url(https://images.unsplash.com/photo-1536965764833-5971e0abed7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80) center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    background-size: cover;
+		    color: #fff;
+		    filter: blur(8px);
+		  	-webkit-filter: blur(8px);
 
-			width:300px;
-			height:300px;
-			background-image:url(https://cdn.create.vista.com/api/media/medium/385149038/stock-photo-vintage-wooden-window-six-pane-white-background?token=);
-			background-size:contain;
-			background-repeat:no-repeat;
+  		}
 
+  		.bg-text {
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+		  font-family: 'Overpass', sans-serif;
+		  color: white;
+		  font-weight: bold;
+		  border: 3px solid #f1f1f1;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  z-index: 2;
+		  width: 80%;
+		  padding: 20px;
+		  text-align: center;
 		}
 
-		#window3{
-			display: inline-block;
-			width:300px;
-			height:200px;
-			background-image:url(https://cdn.create.vista.com/api/media/medium/151731838/stock-photo-wooden-window-frame?token=);
-			background-size:cover;
-
+		.aboutme{
+			position:absolute;
+			top:120%;
+			width: 17.5%;
+			height: 60%;
+			bottom: 20%;
+			background-color: #BA7C64;
+			left:12.5%;
 		}
+
+		.aboutmeoverlay{
+			position:absolute;
+			top:120%;
+			width: 17.5%;
+			height: 60%;
+			bottom: 20%;
+			background-color: transparent;
+			background-image: url(https://images.unsplash.com/photo-1574857608227-d121f3acb20f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2922&q=80);
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 20%;
+			left:12.5%;
+		}
+
+		.projects{
+			position:absolute;
+			top:120%;
+			width: 17.5%;
+			height: 60%;
+			bottom: 20%;
+			background-color: #96AA91;
+			left: 41.25%;
+		}
+
+		.projectsoverlay{
+			position:absolute;
+			top:120%;
+			width: 17.5%;
+			height: 60%;
+			bottom: 20%;
+			background-color: transparent;
+			opacity: 30%;
+			background-image: url(https://images.unsplash.com/photo-1603006905003-be475563bc59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80);
+			background-size: cover;
+			background-repeat: no-repeat;
+			left: 41.25%;
+		}
+
+		.journal{
+			position:absolute;
+			top:120%;
+			width: 17.5%;
+			height: 60%;
+			bottom: 20%;
+			background-color: #47211C;
+			left: 70%;
+		}
+
+		.journaloverlay{
+			position:absolute;
+			top:120%;
+			width: 17.5%;
+			height: 60%;
+			bottom: 20%;
+			background-color: transparent;
+			opacity: 20%;
+			background-image: url(https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2835&q=80);
+			background-size: cover;
+			background-repeat: no-repeat;
+			left: 70%;
+		}
+
+		.aboutmetext{
+			position:absolute;
+			top:185%;
+			width: 15%;
+			left: 13.75%;
+			height: 5%;
+			bottom: 25%;
+			background-color: transparent;
+			color: white;
+			opacity: 92.5%;
+			text-shadow: 4px 4px black;
+			font-family: 'Fredericka the Great', cursive;
+		}
+
+		.projectstext{
+			position:absolute;
+			top:185%;
+			width: 15%;
+			height: 5%;
+			bottom: 25%;
+			left: 42.75%;
+			background-color: transparent;
+			color: white;
+			opacity: 92.5%;
+			text-shadow: 4px 4px black;
+			font-family: 'Fredericka the Great', cursive;
+		}
+
+		.journaltext{
+			position:absolute;
+			top:185%;
+			width: 15%;
+			height: 5%;
+			bottom: 25%;
+			left: 71.5%;
+			background-color: transparent;
+			color: white;
+			opacity: 92.5%;
+			text-shadow: 4px 4px black;
+			font-family: 'Fredericka the Great', cursive;
+		}
+
 
 	</style>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+	<title>
+		
+	</title>
 
 </head>
 
+<body>
+<div class="homepage"></div>
+<div class="bg-text">
+<h1>Welcome to my website!</h1>
+<p>Caroline Lee </p>
+</div>
 
-<body style="margin:0">
+<div class="image2">
+</div>
 
-<center>
+<div class="aboutme"></div>
 
-<a href="projects.html">
-	<div id="window"></div>
+<a href=aboutme.html>
+<div class="aboutmeoverlay"></div>
 </a>
 
-<a href="journal.html">
-	<div id="window2"></div>
+<div class="aboutmetext">
+<h1><center>ABOUT ME</center></h1>
+</div>
+
+<div class="projects"></div>
+
+<a href=projects.html>
+<div class="projectsoverlay"></div>
 </a>
 
-<a href="aboutme.html">
-	<div id="window3"></div>
+<div class="projectstext">
+<h1><center>PROJECTS</center></h1>
+</div>
+
+<div class="journal"></div>
+
+<a href=journal.html>
+<div class="journaloverlay"></div>
 </a>
 
-<p>Choose your fighter!</p>
+<div class="journaltext">
+<h1><center>JOURNAL</center></h1>
+</div>
 
-</center>
+
+
 
 </body>
-
 
 </html>
