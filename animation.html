@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.bluebox{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			animation-name: dance;
+			animation-duration:2.5s;
+			animation-iteration-count: infinite;
+			position: absolute;
+		}
+
+		@keyframes dance {
+
+			0%{
+				width: 200px;
+				height: 200px;
+				border: 12px solid black;
+			}
+
+			50%{
+				width: 600px;
+				height: 600px;
+				border-radius: 50%;
+				transform:rotate(360deg);
+				background-color: magenta;
+				border: 26px dotted yellow;
+			}
+
+			100%{
+				width: 200px;
+				height: 200px;
+				border: 12px solid black;
+			}
+		}
+	</style>
+
+	<title></title>
+</head>
+
+<body>
+
+<div class="bluebox"></div>
+
+</body>
+
+</html>
+

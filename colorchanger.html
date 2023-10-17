@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	#bob{
+		width:200px;
+		height:200px;
+		background-color:grey;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id="bob"></div>
+
+	<script type="text/javascript">
+
+		var box = document.getElementById("bob");
+		box.style.backgroundColor = "rgb(200, 200, 100)";
+		
+		document.addEventListener(
+			"mousemove", function(event){
+				console.log(bob.style );
+				bob.style.backgroundColor = "rgb("+ event.clientX + "," + event.clientY + "," + 0 + ")" 
+			}
+
+			)
+
+
+	</script>
+
+</body>
+</html>
