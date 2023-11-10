@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+	
+	</style>
+	<title>
+	</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+/*defining the recipe */
+
+	function nomNom () {
+		var cupcake = document.createElement("div");
+		document.body.appendChild(cupcake);
+		cupcake.style.width = "200px"
+		cupcake.style.height = "200px"
+		cupcake.style.backgroundImage = "url(https://ouch-cdn2.icons8.com/Bqqc7c-pg_HlGDJWLlJz6shwp6pyZzJkuH8bft2mVQA/rs:fit:368:452/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTI4/L2E2NmFkNDcwLWE2/NmUtNGIwNy05ZGUy/LWI2NDRjYjIzZWE0/MS5wbmc.png)"
+		cupcake.style.backgroundSize = "contain"
+		cupcake.style.backgroundRepeat = "no-repeat"
+		cupcake.style.display = "inline-block"
+
+		cupcake.addEventListener("click", function(){
+			cupcake.style.opacity="0"
+		})
+	}
+
+/* running the recipe*/
+
+setInterval(nomNom, 1000)
+
+</script>
+
+</body>
+
+
+</html>

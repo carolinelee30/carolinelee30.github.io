@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<style type="text/css">
+		
+		#gift{
+			width: 200px;
+			height: 200px;
+			background-image: url(file:///Users/student/Desktop/image_processing20200423-23346-v1ou4g.png);
+			background-size: contain;
+			background-repeat: no-repeat
+			left: 0px;
+			top: 0px;
+			position: absolute;
+		}
+
+	</style>
+
+	<title></title>
+</head>
+
+<body>
+
+<div id="gift"></div>
+
+<script type="text/javascript">
+
+	document.addEventListener("mousemove", function(event){
+
+		gift.style.left = event.clientX-75+ "px";
+		gift.style.top = event.clientY-75+ "px";
+		console.log(event.clientX, event.clientY)
+})
+
+</script>
+
+</body>
+
+
+</html>

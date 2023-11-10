@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			background-color: white;
+		}
+
+		#box{
+			width:100px;
+			height:100px;
+			background-color:blue;
+			position:absolute;
+			margin-left: 200px;
+			top: 200px;
+		}
+
+		#present{
+			width: 80px;
+			height: 80px;
+			margin-right: 80px;
+			background-color: red;
+			position: absolute;
+			top: 200px;
+			left: 3000px;
+			opacity: 1;
+		}
+
+		#jumpscare{
+			width: 100%;
+			height: 720px;
+			background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2016-12/6/16/asset/buzzfeed-prod-fastlane03/sub-buzz-10622-1481061211-1.png?downsize=700%3A%2A&output-quality=auto&output-format=auto);
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0;
+			position: absolute;
+			left: 2260px;
+		}
+		
+
+	</style>
+
+</head>
+
+<div id="box"></div>
+
+<div id="present"></div>
+
+<div id="jumpscare"></div>
+
+
+<body>
+
+<script type="text/javascript">
+	var x = 0;
+	
+	document.addEventListener("keydown", function(event){
+
+
+		if (event.keyCode == 39) {
+			x = x+50
+			box.style.left = x +"px"
+			console.log(x)
+
+			if (x>2800){
+				jumpscare.style.opacity = "1"
+				present.style.opacity = "0";
+				document.body.style.backgroundColor = "black";			}
+
+			if (x>2800){
+
+			}
+		}
+
+
+		if (event.keyCode == 37) {
+			x = x-50
+			box.style.left = x +"px"
+			console.log(x)
+
+
+		}
+
+
+	})
+
+</script>
+
+</body>
+
+
+
+</html>
