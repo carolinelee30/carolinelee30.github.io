@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		#thing{
+			margin-left: 250px;
+			height:560px;
+			width:900px;
+			background-image: url(mathworksheet.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity: 0.8;
+		}
+
+		.sticker{
+			height: 100px;
+			width: 100px;
+			display: inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#prompt{
+			position:absolute;
+			width: 10%;
+			height:100px;
+			left: 82.5%;
+			font-family: Helvetica, sans-serif;
+			font-size: 25px;
+			font-color: black;
+		}
+
+		#sticker1{
+			background-image: url(sticker1.png);
+		}
+
+		#sticker2{
+			background-image: url(sticker2.png);
+		}
+
+		#sticker3{
+			background-image: url(sticker3.png);
+		}
+
+		#sticker4{
+			background-image: url(chick.png);
+		}
+
+		#sticker5{
+			background-image: url(hearts.png);
+		}
+
+		#sticker6{
+			background-image: url(pencil.png);
+		}
+
+		#sticker7{
+			background-image: url(turtle.png);
+		}
+
+	</style>
+
+	<title></title>
+</head>
+
+<body>
+
+<div class="sticker" id="sticker1"></div>
+
+<div class="sticker" id="sticker2"></div>
+
+<div class ="sticker" id="sticker3"></div>
+
+<div class="sticker" id="sticker4"></div>
+
+<div class="sticker" id="sticker5"></div>
+
+<div class="sticker" id="sticker6"></div>
+
+<div class="sticker" id="sticker7"></div>
+
+<div id="prompt">RUIN YOUR MATH HOMEWORK!</div>
+
+<div id="thing">
+</div>
+
+<script type="text/javascript">
+
+	var sticker;
+
+	thing.addEventListener("mousemove", function(event) {
+             console.log(event)
+
+        })
+
+	sticker1.addEventListener("click", function() {
+            sticker = "sticker1.png"
+             console.log(sticker)
+
+
+        })
+
+	sticker2.addEventListener("click", function() {
+            sticker = "sticker2.png"
+       console.log(sticker)
+
+
+        })
+
+	sticker3.addEventListener("click", function() {
+           	sticker = "sticker3.png"
+           	 console.log(sticker)
+
+        })
+
+	sticker4.addEventListener("click",function(){
+		sticker = "chick.png"
+		console.log(sticker)
+	})
+
+	sticker5.addEventListener("click",function(){
+		sticker = "hearts.png"
+		console.log(sticker)
+	})
+
+	sticker6.addEventListener("click",function(){
+		sticker = "pencil.png"
+		console.log(sticker)
+	})
+
+	sticker7.addEventListener("click",function(){
+		sticker = "turtle.png"
+		console.log(sticker)
+	})
+
+	thing.addEventListener("click", function pasteSticker (event){
+		var paste = document.createElement("div")
+		document.body.appendChild(paste)
+		paste.classList.add("sticker");
+		paste.style.position = "absolute"
+		paste.style.backgroundImage = "url("+sticker+")"
+		paste.style.left = event.clientX - 50 + "px"
+		paste.style.top = event.clientY - 50 + "px"
+		paste.style.display="flex"
+	})
+
+
+	</script>
+
+
+</body>
+</html>

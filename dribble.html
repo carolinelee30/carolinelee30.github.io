@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+		.ball{
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			display: inline-block;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+	function dribble (input){
+		var ball = document.createElement("div")
+		document.body.appendChild(ball)
+		ball.classList.add("ball")
+		ball.innerText = input
+
+		ball.addEventListener("click", function(event){
+	ball.style.backgroundColor = "blue"
+})
+	}
+
+	for (var counter =0; counter<1001; counter=counter+1){
+		dribble(counter)
+	}
+
+</script>
+
+
+</body>
+</html>
