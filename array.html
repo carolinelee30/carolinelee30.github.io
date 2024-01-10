@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var stuff = [
+		"rainy days",
+		"smell of baked goods",
+		"night drives",
+		"music after a long day",
+		"being the last one awake"
+
+		]
+
+document.addEventListener("click", function(event){
+		var x = Math.round(Math.random()*4);
+		console.log(x)
+
+		console.log(stuff[x])
+
+		document.body.innerText = stuff[x]
+
+	})
+	</script>
+
+</body>
+</html>
