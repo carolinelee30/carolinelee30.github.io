@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+	#stickfigure1{
+		width: 150px;
+		height: 400px;
+		background-image: url(stickfigure2.png);
+		left: 15%;
+		top: 25%;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#stickfigure2{
+		width: 150px;
+		height: 400px;
+		background-image: url(stickfigure2.png);
+		left: 70%;
+		top: 15%;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		font-size: 23px;
+		font-family: "Arial", sans-serif;
+		text-align: center;
+	}
+
+	#face1{
+		width: 100px;
+		height: 60px;
+		left: 16.75%;
+		top: 27.5%;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		font-size: 21px;
+		font-family: "Arial", sans-serif;
+		text-align: center;
+
+	}
+
+	#face2{
+		width: 100px;
+		height: 60px;
+		left: 71.75%;
+		top: 17.5%;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		font-size: 21px;
+		font-family: "Arial", sans-serif;
+		text-align: center;
+
+	}
+
+	#center{
+		width: 250px;
+		height: 200px;
+		left: 40%;
+		top: 45%;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#text{
+		width: 300px;
+		height: 100px;
+		font-size: 30px;
+		font-style: bold;
+	}
+	
+
+
+</style>
+
+	<title></title>
+</head>
+
+<body>
+
+<div id="text">
+Reaction Simulator
+</div>
+
+<div id="stickfigure1">
+</div>
+
+<div id="stickfigure2">
+</div>
+
+<div id="face1">
+</div>
+
+<div id="face2">
+</div>
+
+<div id="center">
+</div>
+
+<script type="text/javascript">
+
+	var faces1 = ["O∆O", "＾▽＾", "¬_¬", "◡︵◡", "´◡`", "o_O", "´c_`", "ᗒᗨᗕ", "༎ຶŎ༎ຶ", "∪｡∪"]
+
+	var faces2 = ["ΩДΩ", "｡^‿^｡", "~～~", "╥_╥", "◡‿◡", "ↁ_ↁ", "´_ゝ`", "✯◡✯", "⓪益⓪", "︶｡︶"]
+
+	var image = ["url(1.png)", "url(2.png)", "url(3.png)", "url(4.png)", "url(5.png)", "url(6.png)", "url(7.png)", "url(8.png)", "url(9.png)", "url(10.png)"]
+
+document.addEventListener("click", function(event){
+		var x = Math.round(Math.random()*9)
+		console.log(x)
+		face1.innerText = faces1[x]
+		face2.innerText = faces2[x]
+		center.style.backgroundImage = image[x]		
+
+	})
+</script>
+
+</body>
+</html>
