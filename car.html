@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#car{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-image: url(sprite.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: 2;
+		}
+
+		#roady{
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			background-image: url(roady.png);
+			margin: -8px;
+		}
+
+	</style>
+	<title></title>
+</head>
+<body>
+
+<div id="car"></div>
+
+<div id="roady"></div>
+
+<script type="text/javascript">
+
+	var x = 0;
+	var y = 0;
+
+document.addEventListener("keydown", function(event){
+
+	if (event.keyCode == 39) {
+			x = x+10
+			car.style.left = x +"px"
+			console.log(x)
+
+	}
+
+	if (event.keyCode == 37) {
+			x = x-10
+			car.style.left = x +"px"
+			console.log(x)
+
+	}
+
+	if (event.keyCode == 40){
+		y = y + 10
+		car.style.top = y +"px"
+		console.log(x)
+	}
+
+	if (event.keyCode == 38){
+		y = y - 10
+		car.style.top = y +"px"
+		console.log(x)
+	}
+
+	})
+
+</script>
+
+</body>
+</html>
