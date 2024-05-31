@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#box1{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+
+		#box2{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			transition: 1s;
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+
+<div id="box1"></div>
+<div id="box2"></div>
+
+<script type="text/javascript">
+
+	var counter = 0
+
+	box1.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				box2.style.opacity="1";
+				box2.innerText = "this is caroline...."
+				box2.style.fontFamily = "courier"
+			}
+
+			else if (counter%2 == 0) {
+
+				box2.style.opacity = "0";
+				box2.innerText = ""
+			}
+
+		})
+
+</script>
+
+</body>
+</html>

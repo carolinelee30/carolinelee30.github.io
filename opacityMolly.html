@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#button{
+			width:100px;
+			height:100px;
+			background-color:blue;
+		}
+
+		#whatever{
+			width:500px;
+			height:500px;
+			background-color:red;
+			opacity:0;
+			transition:1s;
+			box-shadow: inset 0px 0px 10px 10px white;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div id="button">click on me</div>
+
+	<div id="whatever"> show up</div>
+
+	
+
+	<script type="text/javascript">
+
+		button.addEventListener("click", function(){
+			whatever.style.opacity="1";
+			whatever.innerText = "this is caroline...."
+			whatever.style.fontFamily = "courier"
+		})
+
+
+		
+
+	</script>
+
+</body>
+</html>

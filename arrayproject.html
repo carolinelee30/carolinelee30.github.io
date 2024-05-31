@@ -112,7 +112,7 @@ Reaction Simulator
 	var image = ["url(1.png)", "url(2.png)", "url(3.png)", "url(4.png)", "url(5.png)", "url(6.png)", "url(7.png)", "url(8.png)", "url(9.png)", "url(10.png)"]
 
 document.addEventListener("click", function(event){
-		var x = Math.round(Math.random()*9)
+		var x = Math.floor(Math.random()*10)
 		console.log(x)
 		face1.innerText = faces1[x]
 		face2.innerText = faces2[x]

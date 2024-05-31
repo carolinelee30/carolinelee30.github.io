@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fredericka+the+Great&family=Istok+Web&family=Red+Hat+Display&display=swap');
+
+		body{
+			margin: 0px;
+			background-color: black;
+		}
+
+		.background {
+		    min-height: 720px;
+		    position: relative;
+		    height: 100%;
+		    background: url(https://images.unsplash.com/photo-1581717070062-e388aba6f27a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    background-size: cover;
+		    color: #fff;
+		    filter: blur(4px);
+		    -webkit-filter: blur(4px);
+		  	
+  		}
+
+  		.image2{
+		    min-height: 720px;
+		    position: relative;
+		    height: 100%;
+		    background: url(sheetmusicbackground.jpg) center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    background-size: cover;
+		    color: #fff;
+		    filter: blur(5px);
+		  	-webkit-filter: blur(5px);
+
+  		}
+
+  		.image3{
+		    min-height: 720px;
+		    position: relative;
+		    height: 100%;
+		    background: url(https://images.unsplash.com/photo-1631942242969-0b0df408ce8b?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    background-size: cover;
+		    color: #fff;
+		    filter: blur(5px);
+		  	-webkit-filter: blur(5px);
+
+  		}
+
+  		.image4{
+  			min-height: 720px;
+		    position: relative;
+		    height: 100%;
+  			background: url(https://images.unsplash.com/photo-1566305977571-5666677c6e98?q=80&w=2745&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center;
+  			background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    background-size: cover;
+		    color: #fff;
+		    /*filter: blur(2px);
+		  	-webkit-filter: blur(2px);*/
+  		}
+
+
+  		/*#history{
+  			position: relative;
+  			width: 75%;
+			left: 12.5%;
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 40px;
+  		}*/
+
+  		#history{
+		  font-family: "Cormorant Garamond", serif;
+  		  font-weight: 500;
+          font-style: normal;
+		  font-size: 48px;
+		  color: white;
+		  font-weight: bold;
+		  position: absolute;
+		  top: 10%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  z-index: 2;
+		  width: 80%;
+		  padding: 20px;
+		  text-align: center;
+  		}
+
+  		#harlemrenaissance{
+  		  position: absolute;
+		  top: 25%;
+		  left: 6%;
+		  z-index: 2;
+		  width: 298px;
+		  height: 199px;
+		  padding: 20px;
+		  border: 15px ridge gray;
+		  text-align: center;
+		  background-image: url(https://cdn.thecollector.com/wp-content/uploads/2022/09/harlem-renaissance-jazz-cab-calloway.jpg);
+		  background-size: contain;
+		  background-repeat: no-repeat;
+		  }  		
+
+		  #swing{
+		  	position: absolute;
+		  	top: 25%;
+		  	left: 38%;
+		  	z-index: 2;
+		  	width: 300px;
+		  	height: 240px;
+		  	padding: 20px;
+		  	border: 15px ridge gray;
+		  	background-image: url(https://cdn.britannica.com/73/201073-050-7A256B9D/big-band-jazz-greats-Duke-Ellington-Otto.jpg);
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  }
+
+		  #bebop{
+		  	position: absolute;
+		  	top: 25%;
+		  	left: 70%;
+		  	z-index: 2;
+		  	width: 300px;
+		  	height: 240px;
+		  	padding: 20px;
+		  	border: 15px ridge gray;
+		  	background-image: url(https://www.udiscovermusic.com/wp-content/uploads/2022/04/Charlie-GettyImages-91143208.jpg);
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  }
+
+		  #cool{
+		  	position: absolute;
+		  	top: 127%;
+		  	left: 5.5%;
+		  	z-index: 2;
+		  	width: 300px;
+		  	height: 240px;
+		  	padding: 20px;
+		  	border: 15px ridge gray;
+		  	background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0048b34f-ac32-4aff-9074-c382d8c49f77.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1);
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  }
+
+		  #hardbop{
+		  	position: absolute;
+		  	top: 127%;
+		  	left: 38%;
+		  	z-index: 2;
+		  	width: 300px;
+		  	height: 240px;
+		  	padding: 20px;
+		  	border: 15px ridge gray;
+		  	background-image: url(https://www.sfjazz.org/globalassets/discover/blog/blog-images/artblakey_5050callout.jpg);
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  }
+
+		  #free{
+		  	position: absolute;
+		  	top: 127%;
+		  	left: 70%;
+		  	z-index: 2;
+		  	width: 300px;
+		  	height: 240px;
+		  	padding: 20px;
+		  	border: 15px ridge gray;
+		  	background-image: url(https://a3.typepad.com/6a017d4247abe1970c01a3fd1c7893970b-800wi);
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  }
+
+		  #hr2{
+		  	position: absolute;
+		  	z-index: 3;
+		  	transition: 1s;
+		  	width: 280px;
+		  	height: 130px;
+		  	background-color: rgb(216, 194, 222);
+		  	opacity: 0;
+		  	padding: 20px;
+		  	top: 60%;
+		  	left: 7.7%;
+		  	border-radius: 8px;
+		  	color: black;
+		  	font-family: "Gill Sans";
+		  }
+
+		  #swing2{
+		  	position: absolute;
+		  	z-index: 3;
+		  	transition: 1s;
+		  	width: 280px;
+		  	height: 130px;
+		  	background-color: rgb(216, 194, 222);
+		  	opacity: 0;
+		  	padding:20px;
+		  	top: 66%;
+		  	left: 39.7%;
+		  	border-radius: 8px;
+		  	color: black;
+		  	font-family: "Gill Sans";
+		  }
+
+		  #bebop2{
+		  	position:absolute;
+		  	z-index: 3;
+		  	transition: 1s;
+		  	width: 280px;
+		  	height: 130px;
+		  	background-color: rgb(216, 194, 222);
+		  	opacity: 0;
+		  	padding: 20px;
+		  	top: 66%;
+		  	left: 71.7%;
+		  	border-radius: 8px;
+		  	color: black;
+		  	font-family: "Gill Sans";
+		  }
+
+		  #cool2{
+		  	position:absolute;
+		  	z-index: 3;
+		  	transition: 1s;
+		  	width: 280px;
+		  	height: 130px;
+		  	background-color: rgb(216, 194, 222);
+		  	opacity: 0;
+		  	padding: 20px;
+		  	top: 169%;
+		  	left: 7.2%;
+		  	border-radius: 8px;
+		  	color: black;
+		  	font-family: "Gill Sans";
+		  }
+
+		  #hardbop2{
+		  	position:absolute;
+		  	z-index: 3;
+		  	transition: 1s;
+		  	width: 280px;
+		  	height: 130px;
+		  	background-color: rgb(216, 194, 222);
+		  	opacity: 0;
+		  	padding: 20px;
+		  	top: 169%;
+		  	left: 39.7%;
+		  	border-radius: 8px;
+		  	color: black;
+		  	font-family: "Gill Sans";
+		  }
+
+		  #free2{
+		  	position:absolute;
+		  	z-index: 3;
+		  	transition: 1s;
+		  	width: 280px;
+		  	height: 130px;
+		  	background-color: rgb(216, 194, 222);
+		  	opacity: 0;
+		  	padding: 20px;
+		  	top: 169%;
+		  	left: 71.8%;
+		  	border-radius: 8px;
+		  	color: black;
+		  	font-family: "Gill Sans";
+		  }
+
+		  .cd{
+		  	position: absolute;
+		  	z-index: 2;
+		  	width: 150px;
+		  	height: 150px;
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  	animation-duration:2s;
+		  	animation-iteration-count: infinite;
+		  	animation-timing-function: linear;
+		  }
+
+		  #yellow1{
+		  	top: 220%;
+		  	left: 70%;
+		  	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/LP_Vinyl_Symbol_Icon.png/1200px-LP_Vinyl_Symbol_Icon.png);
+
+		  }
+
+		  #silence1{
+		  	top: 250%;
+		  	left: 17%;
+		  	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0d59bc7e-b7ff-4ab6-92f9-61dd0d75fe20/d8vqdf1-c248ac0c-e00d-4c5d-a1a4-934d22d749e3.png/v1/fill/w_800,h_800/vinyl_record_png_by_dilarosa_d8vqdf1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvMGQ1OWJjN2UtYjdmZi00YWI2LTkyZjktNjFkZDBkNzVmZTIwXC9kOHZxZGYxLWMyNDhhYzBjLWUwMGQtNGM1ZC1hMWE0LTkzNGQyMmQ3NDllMy5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.AYLZgIsBo9zQgXD9iKUA5jndZsnyuOZ7V0gZ-_gkARk);
+		  }
+
+		  @keyframes spin {
+		  	from {transform:rotate(0deg);
+		  	}
+		  	to{transform:rotate(360deg);}
+		  }
+
+		  #orange1{
+		  	top: 267%;
+		  	left:40%;
+		  	background-image: url(https://images.vexels.com/media/users/3/161026/isolated/preview/dd2eaf2264dfa65db6da49168c10027e-record-vinyl-disc-illustration.png);
+		  }
+
+		  #vinyl1{
+		  	top: 230%;
+		  	left: 35%;
+		  	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Vynil_vinil_92837841.png/603px-Vynil_vinil_92837841.png);
+		  }
+
+		  #wideyellow1{
+		  	top: 248%;
+		  	left: 56%;
+		  	background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/88/45_rpm_record.png);
+		  }
+
+		  #blue1{
+		  	top: 280%;
+		  	left: 24%;
+		  	background-image: url(https://forum.affinity.serif.com/uploads/monthly_2020_02/1782721494_vinylrecord.png.e67192d217ae0081d36b3b8dd9a46bba.png);
+		  }
+
+		  #record1{
+		  	top: 275%;
+		  	left: 66%;
+		  	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vinyl_record.svg/1200px-Vinyl_record.svg.png);
+		  }
+
+		  #lime1{
+		  	top: 246%;
+		  	left: 82%;
+		  	background-image: url(https://seabassvinyl.com/wp-content/uploads/2023/09/record-full.png);
+		  }
+
+		  #maroon1{
+		  	top: 223%;
+		  	left: 9%;
+		  	background-image: url(https://cdn.shopify.com/s/files/1/2236/3463/files/missing-lp.png?v=20201028);
+		  }
+
+		  #musictext{
+		  	font-family: "Cormorant Garamond", serif;
+		  	font-weight: 500;
+		  	font-style: normal;
+		 	font-size: 48px;
+		  	color: white;
+		  	font-weight: bold;
+		  	position: absolute;
+		  	width: 400px;
+		  	height: 100px;
+		  	z-index: 2;
+		  	top: 300%;
+		  	left: 4%;
+		  }
+
+		  #keyboard{
+		  	position: absolute;
+		  	top:345%;
+		  	left:20%;
+		  	width:60%;
+		  	height: 400px;
+		  	background-image: url(https://thumb.ac-illust.com/3f/3f33f1b64101f897d9610ef5c3ba8763_t.jpeg);
+		  	z-index: 2;
+		  	background-size: contain;
+		  	background-repeat: no-repeat;
+		  }
+
+		  #middleckey{
+		  	position: absolute;
+		  	top: 345%;
+		  	left: 20%;
+		  	height: 316px;
+		  	width: 87px;
+		  	z-index: 4;
+		  }
+
+		  #eflatkey{
+		  	position: absolute;
+		  	top: 345%;
+		  	left: 30.9%;
+		  	height: 180px;
+		  	width: 38px;
+		  	z-index: 5;
+		  }
+
+		  #ekey{
+		  	position: absolute;
+		  	top: 345%;
+		  	left: 32.1%;
+		  	height: 316px;
+		  	width: 87px;
+		  	z-index: 4;
+		  }
+
+		  #fkey{
+		  	position: absolute;
+		  	top: 345%;
+		  	left: 38%;
+		  	height: 316px;
+		  	width: 87px;
+		  	z-index: 4;
+		  }
+
+		  #fsharpkey{
+		  	position: absolute;
+		  	z-index: 5;
+		  	top: 345%;
+		  	left: 42.8%;
+		  	height: 180px;
+		  	width: 38px;
+		  }
+
+		  #gkey{
+		  	position: absolute;
+		  	z-index: 4;
+		  	top: 345%;
+		  	left: 44%;
+		  	height: 316px;
+		  	width: 87px;
+		  }
+
+		  #akey{
+		  	position: absolute;
+		  	z-index: 4;
+		  	top: 345%;
+		  	left: 50%;
+		  	height: 316px;
+		  	width: 87px;
+		  }
+
+		  #bflatkey{
+		  	position: absolute;
+		  	z-index: 5;
+		  	top: 345%;
+		  	left: 54.5%;
+		  	height: 180px;
+		  	width: 38px;
+		  }
+
+		  #bkey{
+		  	position: absolute;
+		  	z-index: 4;
+		  	top: 345%;
+		  	left: 55.9%;
+		  	height: 316px;
+		  	width: 87px;
+		  }
+
+		  #highckey{
+		  	position: absolute;
+		  	z-index: 4;
+		  	top: 345%;
+		  	left: 61.9%;
+		  	height: 316px;
+		  	width: 87px;
+		  }
+
+		  #cnoteplacement{
+		  	position: absolute;
+		  	height: 70px;
+		  	width: 70px;
+		  	z-index: 3;
+		  	background-color: blue;
+		  	border-radius: 50%;
+		  	top: 380%;
+		  	left: 20.7%;
+		  	opacity: 0;
+		  }
+
+		  #eflatplacement{
+		  	position: absolute;
+		  	height: 34px;
+		  	width: 34px;
+		  	z-index: 3;
+		  	background-color: blue;
+		  	border-radius: 50%;
+		  	top: 365%;
+		  	left: 31%;
+		  	opacity: 0;
+		  }
+
+		  #enoteplacement{
+		  	position: absolute;
+		  	z-index: 3;
+		  	height: 70px;
+		  	width: 70px;
+		  	top: 380%;
+		  	left: 32.6%;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	opacity: 0;
+		  }
+
+		  #fnoteplacement{
+		  	position: absolute;
+		  	z-index: 3;
+		  	height: 70px;
+		  	width: 70px;
+		  	top: 380%;
+		  	left: 38.6%;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	opacity: 0;
+		  }
+
+		  #fsharpplacement{
+		  	position: absolute;
+		  	z-index: 3;
+		  	height: 34px;
+		  	width: 34px;
+		  	background-color: blue;
+		  	border-radius: 50%;
+		  	top: 365%;
+		  	left: 42.9%;
+		  	opacity: 0;
+		  }
+
+		  #gnoteplacement{
+		  	position:absolute;
+		  	z-index: 3;
+		  	height: 70px;
+		  	width: 70px;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	top: 380%;
+		  	left: 44.5%;
+		  	opacity: 0;
+		  }
+
+		  #anoteplacement{
+		  	position:absolute;
+		  	z-index: 3;
+		  	height: 70px;
+		  	width: 70px;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	top: 380%;
+		  	left: 50.5%;
+		  	opacity: 0;
+		  }
+
+		  #bflatplacement{
+		  	position: absolute;
+		  	z-index: 3;
+		  	height: 34px;
+		  	width: 34px;
+		  	top: 365%;
+		  	left: 54.7%;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	opacity: 0;
+		  }
+
+		  #bnoteplacement{
+		  	position: absolute;
+		  	z-index: 3;
+		  	height: 70px;
+		  	width: 70px;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	top: 380%;
+		  	left: 56.5%;
+		  	opacity: 0;
+		  }
+
+		  #highcplacement{
+		  	position: absolute;
+		  	z-index: 3;
+		  	height: 70px;
+		  	width: 70px;
+		  	border-radius: 50%;
+		  	background-color: blue;
+		  	top: 380%;
+		  	left: 62.5%;
+		  	opacity: 0;
+		  }
+		
+		  #chordtext{
+		  	position: absolute;
+		  	height: 80px;
+		  	width: 40%;
+		  	top: 400%;
+		  	left: 30%;
+		  	z-index: 3;
+		  	text-align: center;
+		  	font-family: "Cormorant Garamond", serif;
+		  	font-size: 50px;
+		  	color: black;
+		  	font-weight: bold;
+		  }
+
+		  #keyboardbutton{
+		  	position: absolute;
+		  	width: 100px;
+		  	height: 100px;
+		  	left: 20px;
+		  	padding: 20px;
+		  	top: 325%;
+		  	font-family: "Cormorant Garamond", serif;
+		  	z-index: 3;
+		  	color: white;
+		  	background-color: blue;
+		  	font-weight: bold;
+		  	border-radius: 50%;
+		  	text-align: center;
+		  	vertical-align: middle;
+		  	display: flex;
+  justify-content: center;
+  align-items: center;
+		  }
+
+	</style>
+	<title></title>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="image2"></div>
+
+<div class="image3"></div>
+
+<div class="image4"></div>
+
+<div id="history">HISTORY</div>
+
+<div id="harlemrenaissance"></div>
+
+<div id="swing"></div>
+
+<div id="bebop"></div>
+
+<div id="cool"></div>
+
+<div id="hardbop"></div>
+
+<div id="free"></div>
+
+<div id="hr2">
+	<span id="hr2title"></span>
+	<p id="hr2text"></p>
+	<a href="https://www.thecollector.com/harlem-renaissance-arts-and-culture/"><p id="hr2text2"></p></a>
+	<a href="https://open.spotify.com/playlist/4tLMjFcWmlfzP72sUtCRLj"><p id="hr2text3"></p></a>
+	
+</div>
+
+<div id="swing2">
+	<span id="swing2title"></span>
+	<p id="swing2text"></p>
+	<a href="https://acousticmusic.org/research/history/musical-styles-and-venues-in-america/big-bands-and-the-swing-era/"><p id="swing2text2"></p></a>
+	<a href="https://open.spotify.com/playlist/1uLLL3DQ3S7c7CB5kw3tBa"><p id="swing2text3"></p></a>
+</div>
+
+<div id="bebop2">
+	<span id="bebop2title"></span>
+	<p id="bebop2text"></p>
+	<a href="https://jazzfuel.com/what-is-bebop/"><p id="bebop2text2"></p></a>
+	<a href="https://jazzfuel.com/best-bebop-musicians-albums/"><p id="bebop2text3"></p></a>
+</div>
+
+<div id="cool2">
+	<span id="cool2title"></span>
+	<p id="cool2text"></p>
+	<a href="https://www.jazzhistorytree.com/cool-jazz/"><p id="cool2text2"></p></a>
+	<a href="https://www.jazziz.com/dig-in-cool-jazz-essentials-playlist/"><p id="cool2text3"></p></a>
+</div>
+
+<div id="hardbop2">
+	<span id="hardbop2title"></span>
+	<p id="hardbop2text"></p>
+	<a href="https://www.jazzhistorytree.com/hard-bop/"><p id="hardbop2text2"></p></a>
+	<a href="https://www.jazziz.com/the-sound-of-hard-bop-playlist/"><p id="hardbop2text3"></p></a>
+</div>
+
+<div id="free2">
+	<span id="free2title"></span>
+	<p id="free2text"></p>
+	<a href="https://www.udiscovermusic.com/stories/free-jazz-explained/"><p id="free2text2"></p></a>
+	<a href="https://www.freejazzblog.org/p/the-free-jazz-collectives-top-101.html"><p id="free2text3"></p></a>
+</div>
+
+<div class="cd" id="yellow1"></div>
+
+<div class="cd" id="silence1"></div>
+
+<div class="cd" id ="orange1"></div>
+
+<div class="cd" id="vinyl1"></div>
+
+<div class="cd" id="wideyellow1"></div>
+
+<div class="cd" id="blue1"></div>
+
+<div class="cd" id="record1"></div>
+
+<div class="cd" id="lime1"></div>
+
+<div class="cd" id="maroon1"></div>
+
+<div id="musictext">♫♪...</div>
+
+<div id="keyboard"></div>
+
+<div id="middleckey"></div>
+
+<div id="ekey"></div>
+
+<div id="eflatkey"></div>
+
+<div id="fkey"></div>
+
+<div id="fsharpkey"></div>
+
+<div id="gkey"></div>
+
+<div id="akey"></div>
+
+<div id="bflatkey"></div>
+
+<div id="bkey"></div>
+
+<div id="highckey"></div>
+
+<div id="cnoteplacement"></div>
+
+<div id="eflatplacement"></div>
+
+<div id="enoteplacement"></div>
+
+<div id="fnoteplacement"></div>
+
+<div id="fsharpplacement"></div>
+
+<div id="gnoteplacement"></div>
+
+<div id="anoteplacement"></div>
+
+<div id="bflatplacement"></div>
+
+<div id="bnoteplacement"></div>
+
+<div id="highcplacement"></div>
+
+<div id="chordtext"></div>
+
+<div id="keyboardbutton">CLICK FOR CHORD</div>
+
+<audio id="sowhat" src="sowhat.mp3"></audio>
+
+<audio id="moanin" src="charlesmingusmoanin.mp3"></audio>
+
+<audio id="epistrophy" src="epistrophy.mp3"></audio>
+
+<audio id="alamode" src ="alamode.mp3"></audio>
+
+<audio id="elgaucho" src="elgaucho.mp3"></audio>
+
+<audio id="favoritethings" src="favoritethings.mp3"></audio>
+
+<audio id="moanin2" src="artblakeymoanin.mp3"></audio>
+
+<audio id="emily" src="emily.mp3"></audio>
+
+<audio id="inyoursoul" src="inyoursoul.mp3"></audio>
+
+<audio id="middlec" src="middlec.mp3"></audio>
+
+<audio id="eflat" src="eflat.mp3"></audio>
+
+<audio id="enote" src="enote.mp3"></audio>
+
+<audio id="fnote" src="fnote.mp3"></audio>
+
+<audio id="fsharp" src="fsharp.mp3"></audio>
+
+<audio id="gnote" src="gnote.mp3"></audio>
+
+<audio id="anote" src="anote.mp3"></audio>
+
+<audio id="bflat" src="bflat.mp3"></audio>
+
+<audio id="bnote" src="bnote.mp3"></audio>
+
+<script type="text/javascript">
+
+yellow1.addEventListener("mouseenter", function(){
+	yellow1.style.animationName = "spin"
+	sowhat.play()
+
+})
+
+yellow1.addEventListener("mouseout", function(){
+	yellow1.style.animationName = ""
+	sowhat.pause()
+
+})
+
+silence1.addEventListener("mouseenter", function(){
+	silence1.style.animationName = "spin"
+	moanin.play()
+})
+
+silence1.addEventListener("mouseout", function(){
+	silence1.style.animationName = ""
+	moanin.pause()
+})
+
+orange1.addEventListener("mouseenter", function(){
+	orange1.style.animationName = "spin"
+	epistrophy.play()
+})
+
+orange1.addEventListener("mouseout", function(){
+	orange1.style.animationName = ""
+	epistrophy.pause()
+})
+
+vinyl1.addEventListener("mouseenter", function(){
+	vinyl1.style.animationName = "spin"
+	alamode.play()
+})
+
+vinyl1.addEventListener("mouseout", function(){
+	vinyl1.style.animationName = ""
+	alamode.pause()
+})
+
+wideyellow1.addEventListener("mouseenter", function(){
+	wideyellow1.style.animationName = "spin"
+	elgaucho.play()
+})
+
+wideyellow1.addEventListener("mouseout", function(){
+	wideyellow1.style.animationName = ""
+	elgaucho.pause()
+})
+
+blue1.addEventListener("mouseenter", function(){
+	blue1.style.animationName = "spin"
+	favoritethings.play()
+})
+
+blue1.addEventListener("mouseout", function(){
+	blue1.style.animationName = ""
+	favoritethings.pause()
+})
+
+record1.addEventListener("mouseenter", function(){
+	record1.style.animationName = "spin"
+	moanin2.play()
+})
+
+record1.addEventListener("mouseout", function(){
+	record1.style.animationName = ""
+	moanin2.pause()
+})
+
+lime1.addEventListener("mouseenter", function(){
+	lime1.style.animationName = "spin"
+	emily.play()
+})
+
+lime1.addEventListener("mouseout", function(){
+	lime1.style.animationName = ""
+	emily.pause()
+})
+
+maroon1.addEventListener("mouseenter", function(){
+	maroon1.style.animationName = "spin"
+	inyoursoul.play()
+})
+
+maroon1.addEventListener("mouseout", function(){
+	maroon1.style.animationName = ""
+	inyoursoul.pause()
+})
+
+var counter = 0
+
+	harlemrenaissance.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				hr2.style.opacity="0.8"
+				hr2title.innerText = "Cab Calloway Orchestra (1930)"
+				hr2text.innerText="The Harlem Renaissance"
+				hr2text2.innerText="Learn more"
+				hr2text3.innerText="Listen!"
+				hr2.style.fontFamily = "Gill Sans"
+			}
+
+			else if (counter%2 == 0) {
+
+				hr2.style.opacity = "0"
+				hr2title.innerText = ""
+				hr2text.innerText =""
+				hr2text2.innerText=""
+				hr2text3.innerText=""
+			}
+
+		})
+
+	swing.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				swing2.style.opacity="0.8"
+				swing2title.innerText = "Duke Ellington Orchestra (1934)"
+				swing2text.innerText = "Swing Era"
+				swing2text2.innerText ="Learn more"
+				swing2text3.innerText="Listen!"
+				swing2.style.fontFamily = "Gill Sans"
+			}
+
+			else if (counter%2 == 0) {
+
+				swing2.style.opacity = "0"
+				swing2text.innerText = ""
+				swing2title.innerText =""
+				swing2text2.innerText =""
+				swing2text3.innerText=""
+			}
+
+		})
+
+	bebop.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				bebop2.style.opacity="0.8"
+				bebop2title.innerText = "Charlie Parker Quintet (1947)"
+				bebop2text.innerText = "Bebop"
+				bebop2text2.innerText="Learn more"
+				bebop2text3.innerText="Listen!"
+				bebop2.style.fontFamily = "Gill Sans"
+			}
+
+			else if (counter%2 == 0) {
+
+				bebop2.style.opacity = "0"
+				bebop2title.innerText = ""
+				bebop2text.innerText=""
+				bebop2text2.innerText=""
+				bebop2text3.innerText=""
+			}
+
+		})
+
+	cool.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				cool2.style.opacity="0.8"
+				cool2title.innerText = "Dave Brubeck Quartet (1960)"
+				cool2text.innerText = "Cool Jazz"
+				cool2text2.innerText = "Learn more"
+				cool2text3.innerText = "Listen!"
+				cool2.style.fontFamily = "Gill Sans"
+			}
+
+			else if (counter%2 == 0) {
+
+				cool2.style.opacity = "0"
+				cool2title.innerText = ""
+				cool2text.innerText = ""
+				cool2text2.innerText = ""
+				cool2text3.innerText = ""
+			}
+
+		})
+
+	hardbop.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				hardbop2.style.opacity="0.8"
+				hardbop2title.innerText = "Art Blakey and the Jazz Messengers (1960)"
+				hardbop2text.innerText = "Hard Bop"
+				hardbop2text2.innerText = "Learn more"
+				hardbop2text3.innerText = "Listen!"
+				hardbop2.style.fontFamily = "Gill Sans"
+			}
+
+			else if (counter%2 == 0) {
+
+				hardbop2.style.opacity = "0"
+				hardbop2title.innerText = ""
+				hardbop2text.innerText =""
+				hardbop2text2.innerText = ""
+				hardbop2text3.innerText = ""
+			}
+
+		})
+
+	free.addEventListener("click",function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+				free2.style.opacity="0.8";
+				free2title.innerText = "Ornette Coleman Quartet (1962)"
+				free2text.innerText = "Free Jazz"
+				free2text2.innerText = "Learn more"
+				free2text3.innerText = "Listen!"
+				free2.style.fontFamily = "Gill Sans"
+			}
+
+			else if (counter%2 == 0) {
+
+				free2.style.opacity = "0"
+				free2title.innerText = ""
+				free2text.innerText =""
+				free2text2.innerText = ""
+				free2text3.innerText = ""
+			}
+
+		})
+
+middleckey.addEventListener("click", function(){
+	middlec.play()
+})
+
+eflatkey.addEventListener("click", function(){
+	eflat.play()
+})
+
+ekey.addEventListener("click", function(){
+	enote.play()
+})
+
+fkey.addEventListener("click", function(){
+	fnote.play()
+})
+
+fsharpkey.addEventListener("click", function(){
+	fsharp.play()
+})
+
+gkey.addEventListener("click", function(){
+	gnote.play()
+})
+
+akey.addEventListener("click", function(){
+	anote.play()
+})
+
+
+bflatkey.addEventListener("click", function(){
+	bflat.play()
+})
+
+bkey.addEventListener("click", function(){
+	bnote.play()
+})
+
+var notes1 = ["cnoteplacement", "cnoteplacement", "cnoteplacement", "cnoteplacement", "cnoteplacement"]
+
+var notes2 = ["enoteplacement", "enoteplacement", "eflatplacement", "eflatplacement", "eflatplacement"]
+
+var notes3 = ["gnoteplacement", "gnoteplacement", "gnoteplacement", "fsharpplacement", "fsharpplacement"]
+
+var notes4 = ["bnoteplacement", "bflatplacement", "bflatplacement", "bflatplacement", "anoteplacement"]
+
+var chordtitle = ["C Major 7", "C7", "C Minor 7", "C Minor b5 7", "C Diminished 7"]
+
+var x
+
+function show (input){
+
+		var div1 = document.getElementById(notes1[input])
+		div1.style.opacity="1"
+
+		var div2 = document.getElementById(notes2[input])
+		div2.style.opacity="1"
+
+		var div3 = document.getElementById(notes3[input])
+		div3.style.opacity="1"
+
+		var div4 = document.getElementById(notes4[input])
+		div4.style.opacity="1"
+
+		console.log(div1, div2, div3, div4)
+		}
+
+		function hide (input){
+
+		var div1a = document.getElementById(notes1[input])
+		div1a.style.opacity="0"
+
+		var div2a = document.getElementById(notes2[input])
+		div2a.style.opacity="0"
+
+		var div3a = document.getElementById(notes3[input])
+		div3a.style.opacity="0"
+
+		var div4a = document.getElementById(notes4[input])
+		div4a.style.opacity="0"
+
+		console.log(div1a, div2a, div3a, div4a)
+		}
+		
+var counter = 0
+var previousX = null
+var randomAgain = null
+
+document.getElementById("keyboardbutton").addEventListener("click", function(event) {
+    counter=counter+1;
+    
+    if (counter%2==1) {
+        if (previousX !== null) {
+            hide(previousX)
+        }
+        x = Math.floor(Math.random() * 5)
+        show(x)
+        previousX = x
+        chordtext.innerText= chordtitle[x]
+    } 
+
+    else {
+        do {
+            randomAgain = Math.floor(Math.random() * 5)
+        } while (randomAgain === previousX)
+        hide(previousX)
+        show(randomAgain)
+        previousX = randomAgain
+        chordtext.innerText= chordtitle[randomAgain]
+    }
+
+
+})
+
+/*document.addEventListener("click", function(event){
+	counter=counter+1
+	
+
+	if(counter%2==1){
+
+	x = Math.round(Math.random()*4)
+		previousX = x;
+		show(previousX)
+		hide(randomAgain)
+	}
+
+	if (counter%2==0){
+		randomAgain = Math.round(Math.random()*4)
+
+		if (randomAgain !== x){
+		hide(previousX);
+		show(randomAgain)
+
+		}
+
+	/*	else if(x==previousAgain){alert("try again!")}*/
+	//}
+
+
+		
+	//})
+
+
+</script>
+
+</body>
+</html>
